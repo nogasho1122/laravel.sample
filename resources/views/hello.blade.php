@@ -5,9 +5,12 @@
   <title>My First Page</title>
 </head>
 <body>
-  <form action="form_sample.php" method="post" >
-  <p><input type="text" name="name" value=""></p>
-    <input type="submit" >
-</form> 
+<form action="{{ url('/message/add')}}" method="POST" class="form-horizontal">
+  {{ csrf_field() }}
+  <textarea rows="6" name="message"></textarea>
+  <button type="submit" name="add">
+   送信
+  </button>
+</form>
 </body>
 </html>
