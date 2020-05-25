@@ -5,7 +5,9 @@
   <title>My First Page</title>
 </head>
 <body>
-  <p>こんにちは,クラスフォックスさん</p>
-  <p>{{date("Y/m/d H:i:s")}}</p>
+  <form action="form_sample.php" method="post" >
+  <p><input type="text" name="name" value=""></p>
+    <input type="submit" >
+</form> 
 </body>
 </html>
