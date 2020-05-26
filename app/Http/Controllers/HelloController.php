@@ -2,19 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+// use Illuminate\Http\Request;
+use Request;
 
 class HelloController extends Controller
 {
-    //
-    public function index()
-    {
-        return view('hello');
-    }
-
-    public function postIndex()
-    {
-        $only = Request::only('meassage');
-        return view('add.only', compact('only'));
-    }
+	public function write1(Request $moji)
+	{
+	    $data1 = $moji::all();
+	    return view('testform',compact('data1'));
+	}
 }

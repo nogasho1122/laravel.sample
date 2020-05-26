@@ -14,11 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-Route::get('hello', 'HelloController@index');
-
-Route::post('/message/add', function(Request $request){
-});
-
+Route::post('/testform','HelloController@write1');
