@@ -21,3 +21,4 @@ Route::get('hello', 'HelloController@index');
 
 Route::post('/message/add', function(Request $request){
 });
+

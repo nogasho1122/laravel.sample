@@ -1,3 +1,7 @@
+<?php 
+$message = $_POST['message'];
+echo $message;
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>

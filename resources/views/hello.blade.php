@@ -6,7 +6,7 @@
 </head>
 <body>
 <form action="{{ url('/message/add')}}" method="POST" class="form-horizontal">
-  {{ csrf_field() }}
+  @csrf
   <textarea rows="6" name="message"></textarea>
   <button type="submit" name="add">
    送信

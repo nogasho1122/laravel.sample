@@ -11,4 +11,10 @@ class HelloController extends Controller
     {
         return view('hello');
     }
+
+    public function postIndex()
+    {
+        $only = Request::only('meassage');
+        return view('add.only', compact('only'));
+    }
 }
