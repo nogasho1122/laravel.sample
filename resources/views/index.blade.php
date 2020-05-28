@@ -7,7 +7,7 @@
 <body >
 <form action="testform" method="post">
         @csrf
-        <input type="text" name="textbox1" >
+        <input type="text" name="textbox" >
         <input type="submit" value="送信ボタン" >
 </form>
 </body>
