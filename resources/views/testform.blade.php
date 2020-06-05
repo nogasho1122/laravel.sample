@@ -6,7 +6,7 @@
 </head>
 <body >
 
-<p>{{$data1['textbox1']}}</p>
+<p>{{$data['textbox']}}</p>
 
 </body>
 </html>

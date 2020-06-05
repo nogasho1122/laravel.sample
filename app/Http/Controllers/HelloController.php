@@ -7,9 +7,9 @@ use Request;
 
 class HelloController extends Controller
 {
-	public function write1(Request $moji)
+	public function write(Request $moji)
 	{
-	    $data1 = $moji::all();
-	    return view('testform',compact('data1'));
+	    $data = $moji::all();
+	    return view('testform',compact('data'));
 	}
 }
